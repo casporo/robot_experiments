@@ -1,0 +1,4 @@
+# ignore all html, xml and png file
+*.html
+*.xml
+*.png
