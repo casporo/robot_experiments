@@ -11,6 +11,12 @@ Sample Test - Google Search
     When user types an item in search bar
     Then page is open
 
+Sample Test - Google Search Random Text
+    [tags]  sample_random_test
+    Given open browser to google
+    When user types a random item in search bar
+    Then page is open
+
 *** Keywords ***
 User types an item in search bar
     User searches for    ${SOMETHING}

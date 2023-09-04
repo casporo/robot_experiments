@@ -6,6 +6,7 @@ Documentation     A resource file with reusable keywords and variables.
 ...               by the imported SeleniumLibrary.
 Library           SeleniumLibrary
 Library    Collections
+Library           FakerLibrary
 Variables         ../sample_variables.py
 
 *** Variables ***
@@ -29,6 +30,11 @@ User searches for
     Wait Until Page Contains Element   ${SEARCH}[SEARCH FIELD]
     Input Text    ${SEARCH}[SEARCH FIELD]    ${SOMETHING}
     Press Keys    ${SEARCH}[SEARCH FIELD]    RETURN
+
+When user types a random item in search bar
+    Wait Until Page Contains Element   ${SEARCH}[SEARCH FIELD]
+    ${random_input}=    Random Letters
+    Input Text    ${SEARCH}[SEARCH FIELD]    ${random_input}
 
 Page is Open
      Sleep    10s
