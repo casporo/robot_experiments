@@ -17,6 +17,7 @@ Sample Test - Google Search Random Text
     When user types a random item in search bar
     Then page is open
 
+
 *** Keywords ***
 User types an item in search bar
     User searches for    ${SOMETHING}
