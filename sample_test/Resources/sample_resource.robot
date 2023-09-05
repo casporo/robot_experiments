@@ -5,10 +5,11 @@ Documentation     A resource file with reusable keywords and variables.
 ...               domain specific language. They utilize keywords provided
 ...               by the imported SeleniumLibrary.
 Library           SeleniumLibrary
-Library    Collections
+Library           Collections
 Library           FakerLibrary
-Library    String
+Library           String
 Variables         ../sample_variables.py
+Resource          ../Resources/sample_factory.robot
 
 *** Variables ***
 ${SERVER}         localhost:7272
@@ -37,6 +38,10 @@ When user types a random item in search bar
     ${random_input}=    Generate Random String
     Input Text    ${SEARCH}[SEARCH FIELD]    ${random_input}
     Press Keys    ${SEARCH}[SEARCH FIELD]    RETURN
+    
+This is a test statement
+    ${test_name2}=   Receives text from generated file
+    Log To Console    ${test_name2}
 
 Page is Open
      Sleep    10s
