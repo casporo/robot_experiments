@@ -1,6 +1,6 @@
 *** Settings ***
-Library    SeleniumLibrary    plugins=CryptoLibrary.Plugin
-Library    CryptoLibrary
+Library    SeleniumLibrary
+Library    CryptoLibrary    variable_decryption=true
 
 
 *** Variables ***
