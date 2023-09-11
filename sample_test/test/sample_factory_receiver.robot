@@ -9,6 +9,7 @@ Test Teardown     Close Browser
 *** Test Cases ***
 Sample Test - Factory receiver
     [tags]  sample_test
+
     Given this is a test statement
 
 *** Keywords ***

@@ -42,6 +42,11 @@ When user types a random item in search bar
 This is a test statement
     ${test_name2}=   Receives text from generated file
     Log To Console    ${test_name2}
+    This is another statement     ${test_name2}
+
+This is another statement
+    [Arguments]    ${test_name2}
+    Log To Console    ${test_name2}
 
 Page is Open
      Sleep    10s
